@@ -33,6 +33,17 @@ var w = toWord( f32 );
 ```
 
 
+## Notes
+
+* The equivalent of this `function` in C/C++,
+
+``` c
+unsigned int toWord(float x) {
+  return *(unsigned int*)&x;
+}
+``` 
+
+
 ## Examples
 
 ``` javascript
