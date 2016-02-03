@@ -2,7 +2,7 @@ toWord
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][build-image]][build-url] [![Coverage Status][coverage-image]][coverage-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Returns an unsigned 32-bit integer representing the bit sequence of a [single-precision floating-point number][ieee754].
+> Returns an unsigned 32-bit integer corresponding to the [IEEE 754][ieee754] binary representation of a [single-precision floating-point number][ieee754].
 
 
 ## Installation
@@ -20,7 +20,7 @@ var toWord = require( 'math-float32-to-word' );
 
 #### toWord( x )
 
-Returns an unsigned 32-bit `integer` representing the bit sequence of a [single-precision floating-point number][ieee754].
+Returns an unsigned 32-bit `integer` corresponding to the [IEEE 754][ieee754] binary representation of a [single-precision floating-point number][ieee754].
 
 ``` javascript
 var float64ToFloat32 = require( 'float64-to-float32' );

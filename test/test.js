@@ -31,7 +31,7 @@ tape( 'main export is a function', function test( t ) {
 	t.end();
 });
 
-tape( 'if provided `0`, the function returns an unsigned 32-bit integer representing the underlying bit sequence', function test( t ) {
+tape( 'if provided `0`, the function returns an unsigned 32-bit integer representing the underlying IEEE 754 bit sequence', function test( t ) {
 	var uint32;
 	var word;
 	var sign;
@@ -52,7 +52,7 @@ tape( 'if provided `0`, the function returns an unsigned 32-bit integer represen
 	t.end();
 });
 
-tape( 'if provided `-0`, the function returns an unsigned 32-bit integer representing the underlying bit sequence', function test( t ) {
+tape( 'if provided `-0`, the function returns an unsigned 32-bit integer representing the underlying IEEE 754 bit sequence', function test( t ) {
 	var uint32;
 	var word;
 	var sign;
@@ -73,7 +73,7 @@ tape( 'if provided `-0`, the function returns an unsigned 32-bit integer represe
 	t.end();
 });
 
-tape( 'if provided `+infinity`, the function returns an unsigned 32-bit integer representing the underlying bit sequence', function test( t ) {
+tape( 'if provided `+infinity`, the function returns an unsigned 32-bit integer representing the underlying IEEE 754 bit sequence', function test( t ) {
 	var uint32;
 	var word;
 	var sign;
@@ -94,7 +94,7 @@ tape( 'if provided `+infinity`, the function returns an unsigned 32-bit integer 
 	t.end();
 });
 
-tape( 'if provided `-infinity`, the function returns an unsigned 32-bit integer representing the underlying bit sequence', function test( t ) {
+tape( 'if provided `-infinity`, the function returns an unsigned 32-bit integer representing the underlying IEEE 754 bit sequence', function test( t ) {
 	var uint32;
 	var word;
 	var sign;
@@ -115,7 +115,7 @@ tape( 'if provided `-infinity`, the function returns an unsigned 32-bit integer 
 	t.end();
 });
 
-tape( 'if provided `NaN`, the function returns an unsigned 32-bit integer representing the underlying bit sequence', function test( t ) {
+tape( 'if provided `NaN`, the function returns an unsigned 32-bit integer representing the underlying IEEE 754 bit sequence', function test( t ) {
 	var uint32;
 	var word;
 	var sign;
@@ -136,7 +136,7 @@ tape( 'if provided `NaN`, the function returns an unsigned 32-bit integer repres
 	t.end();
 });
 
-tape( 'if provided large positive values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided large positive values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -153,7 +153,7 @@ tape( 'if provided large positive values, the function returns unsigned 32-bit i
 	t.end();
 });
 
-tape( 'if provided normal positive values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided normal positive values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -170,7 +170,7 @@ tape( 'if provided normal positive values, the function returns unsigned 32-bit 
 	t.end();
 });
 
-tape( 'if provided small positive values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided small positive values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -187,7 +187,7 @@ tape( 'if provided small positive values, the function returns unsigned 32-bit i
 	t.end();
 });
 
-tape( 'if provided tiny positive values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided tiny positive values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -204,7 +204,7 @@ tape( 'if provided tiny positive values, the function returns unsigned 32-bit in
 	t.end();
 });
 
-tape( 'if provided subnormal positive values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided subnormal positive values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -221,7 +221,7 @@ tape( 'if provided subnormal positive values, the function returns unsigned 32-b
 	t.end();
 });
 
-tape( 'if provided large negative values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided large negative values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -238,7 +238,7 @@ tape( 'if provided large negative values, the function returns unsigned 32-bit i
 	t.end();
 });
 
-tape( 'if provided normal negative values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided normal negative values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -255,7 +255,7 @@ tape( 'if provided normal negative values, the function returns unsigned 32-bit 
 	t.end();
 });
 
-tape( 'if provided small negative values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided small negative values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -272,7 +272,7 @@ tape( 'if provided small negative values, the function returns unsigned 32-bit i
 	t.end();
 });
 
-tape( 'if provided tiny negative values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided tiny negative values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
@@ -289,7 +289,7 @@ tape( 'if provided tiny negative values, the function returns unsigned 32-bit in
 	t.end();
 });
 
-tape( 'if provided subnormal negative values, the function returns unsigned 32-bit integers representing the underlying bit sequences', function test( t ) {
+tape( 'if provided subnormal negative values, the function returns unsigned 32-bit integers representing the underlying IEEE 754 bit sequences', function test( t ) {
 	var expected;
 	var x;
 	var y;
